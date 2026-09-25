@@ -10,39 +10,24 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gustavomacedo-dev.com/aulas">
     
-    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Aulas Particulares de Computação | Gustavo Macedo">
     <meta property="og:description" content="Reforço universitário em Computação com professor da KPMG. Java, Python, IA e mais. Primeira aula grátis.">
     <meta property="og:image" content="./perfil.png">
     <meta property="og:url" content="https://gustavomacedo-dev.com/aulas">
     
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Gustavo Macedo",
         "jobTitle": "AI Engineer e Professor de Computação",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "KPMG Brasil"
-        },
+        "worksFor": { "@type": "Organization", "name": "KPMG Brasil" },
         "url": "https://gustavomacedo-dev.com",
         "email": "mota.macedo05@gmail.com",
         "telephone": "+5511940250003",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
-            "addressCountry": "BR"
-        },
-        "alumniOf": [
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Universidade Cidade de São Paulo (UNICID)"
-            }
-        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+        "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "Universidade Cidade de São Paulo (UNICID)" }],
         "knowsAbout": ["Java", "Python", "Inteligência Artificial", "Engenharia de Software", "Algoritmos", "Banco de Dados"]
     }
     </script>
@@ -52,36 +37,14 @@
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Aulas Particulares de Computação",
-        "provider": {
-            "@type": "Person",
-            "name": "Gustavo Macedo"
-        },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Brasil"
-        },
+        "provider": { "@type": "Person", "name": "Gustavo Macedo" },
+        "areaServed": { "@type": "Country", "name": "Brasil" },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Aulas de Computação",
             "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Aula Avulsa de Computação"
-                    },
-                    "price": "50",
-                    "priceCurrency": "BRL"
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Pacote Mensal de Aulas"
-                    },
-                    "price": "250",
-                    "priceCurrency": "BRL"
-                }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aula Avulsa de Computação" }, "price": "50", "priceCurrency": "BRL" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pacote Mensal de Aulas" }, "price": "250", "priceCurrency": "BRL" }
             ]
         }
     }
@@ -160,12 +123,39 @@
         .subject-card h3 i { color: var(--accent); }
         .subject-card p { color: var(--text-secondary); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
         .subject-level { font-size: 0.8rem; color: var(--accent); background: var(--accent-glow); padding: 0.3rem 0.8rem; border-radius: 20px; align-self: flex-start; }
+
+        /* METHODOLOGY - DISTRIBUIÇÃO MELHORADA */
         .methodology { padding: 6rem 0; border-top: 1px solid var(--border-color); }
-        .method-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
-        .method-step { text-align: center; padding: 2rem 1rem; }
-        .method-icon { font-size: 1.5rem; margin-bottom: 1rem; display: inline-flex; align-items: center; justify-content: center; background: var(--bg-secondary); width: 60px; height: 60px; border-radius: 12px; border: 1px solid var(--border-color); color: var(--accent); }
+        .method-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .method-step {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            flex: 0 1 220px;
+            max-width: 240px;
+        }
+        .method-icon {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            color: var(--accent);
+        }
         .method-step h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
         .method-step p { color: var(--text-secondary); font-size: 0.9rem; }
+
         .pricing { padding: 6rem 0; border-top: 1px solid var(--border-color); }
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; }
         .price-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; transition: all 0.3s ease; position: relative; display: flex; flex-direction: column; }
@@ -211,6 +201,7 @@
             .hero-image { min-height: 400px; max-height: 500px; }
             .hero-image img { max-height: 500px; }
             .nav-links { display: none; }
+            .method-step { flex: 0 1 200px; }
         }
         @media (max-width: 600px) {
             .hero-text h1 { font-size: 2rem; }
@@ -218,12 +209,12 @@
             .hero-stats { flex-direction: column; gap: 1.5rem; }
             .hero-image { min-height: 300px; }
             .hero-image img { max-height: 400px; }
+            .method-step { flex: 0 1 100%; max-width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav>
         <div class="nav-container">
             <div class="logo">[GM]</div>
@@ -238,7 +229,6 @@
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -251,22 +241,11 @@
                     </div>
                     <h1>Aulas Particulares de Computação para Universitários<br><span class="highlight">Aprenda programação com quem trabalha no mercado</span></h1>
                     <p class="subtitle">Reforço universitário em Ciência da Computação e TI com professor da KPMG. Aulas de Java, Python, IA, Algoritmos e mais — com foco em aprovação e carreira.</p>
-                    
                     <div class="hero-stats">
-                        <div>
-                            <div class="stat-number">94%</div>
-                            <div class="stat-label">Redução de latência em APIs reais</div>
-                        </div>
-                        <div>
-                            <div class="stat-number">2+ anos</div>
-                            <div class="stat-label">Desenvolvendo em produção</div>
-                        </div>
-                        <div>
-                            <div class="stat-number">6-8h</div>
-                            <div class="stat-label">Módulo Java criado para a Escola DNC</div>
-                        </div>
+                        <div><div class="stat-number">94%</div><div class="stat-label">Redução de latência em APIs reais</div></div>
+                        <div><div class="stat-number">2+ anos</div><div class="stat-label">Desenvolvendo em produção</div></div>
+                        <div><div class="stat-number">6-8h</div><div class="stat-label">Módulo Java criado para a Escola DNC</div></div>
                     </div>
-
                     <div class="hero-buttons">
                         <a href="#contato" class="btn btn-primary"><i class="bi bi-calendar-check"></i> Agendar aula experimental grátis</a>
                         <a href="#aulas" class="btn btn-outline">Ver disciplinas <i class="bi bi-arrow-right"></i></a>
@@ -279,7 +258,6 @@
         </div>
     </section>
 
-    <!-- ABOUT / CREDENTIALS -->
     <section class="about" id="sobre">
         <div class="container">
             <div class="section-header">
@@ -321,7 +299,6 @@
         </div>
     </section>
 
-    <!-- SUBJECTS -->
     <section class="subjects" id="aulas">
         <div class="container">
             <div class="section-header">
@@ -378,44 +355,42 @@
         </div>
     </section>
 
-    <!-- METHODOLOGY -->
     <section class="methodology" id="metodologia">
         <div class="container">
             <div class="section-header">
-                <h2>Como funcionam as aulas particulares</h2>
-                <p>Metodologia testada para universitários que querem resultados rápidos e duradouros</p>
+                <h2>Como posso te ajudar a evoluir</h2>
+                <p>Aulas 100% personalizadas. Cada aluno tem um objetivo, eu traço o caminho mais curto até lá.</p>
             </div>
             <div class="method-grid">
                 <div class="method-step">
                     <span class="method-icon"><i class="bi bi-clipboard-data"></i></span>
                     <h3>Diagnóstico Inicial</h3>
-                    <p>Avalio seu nível atual, dificuldades específicas e objetivos acadêmicos para traçar um plano de estudos personalizado.</p>
+                    <p>Avalio seu nível, suas dificuldades na faculdade e seus objetivos de carreira para traçar um plano.</p>
                 </div>
                 <div class="method-step">
                     <span class="method-icon"><i class="bi bi-journal-bookmark"></i></span>
-                    <h3>Plano de Estudos Sob Medida</h3>
-                    <p>Roteiro personalizado com conteúdo teórico, exercícios práticos e projetos alinhados à sua grade universitária.</p>
+                    <h3>Plano de Estudos</h3>
+                    <p>Roteiro sob medida com teoria, exercícios práticos e projetos alinhados à sua grade curricular.</p>
                 </div>
                 <div class="method-step">
                     <span class="method-icon"><i class="bi bi-camera-video"></i></span>
-                    <h3>Aulas Online Interativas</h3>
-                    <p>Encontros ao vivo com compartilhamento de tela, código em tempo real e tira-dúvidas imediato via videochamada.</p>
+                    <h3>Aulas Interativas ao Vivo</h3>
+                    <p>Encontros online com compartilhamento de tela, código em tempo real e tira-dúvidas imediato.</p>
                 </div>
                 <div class="method-step">
                     <span class="method-icon"><i class="bi bi-code-square"></i></span>
                     <h3>Prática Constante</h3>
-                    <p>Exercícios, quizzes e mini-projetos entre as aulas para fixar o conteúdo e desenvolver autonomia na resolução de problemas.</p>
+                    <p>Exercícios, quizzes e mini-projetos entre as aulas para fixar o conteúdo e desenvolver autonomia.</p>
                 </div>
                 <div class="method-step">
                     <span class="method-icon"><i class="bi bi-graph-up"></i></span>
                     <h3>Feedback Contínuo</h3>
-                    <p>Acompanho sua evolução, ajusto o ritmo e garanto que você esteja sempre progredindo com confiança até a aprovação.</p>
+                    <p>Acompanho sua evolução, ajusto o ritmo e garanto que você esteja sempre progredindo com confiança.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRICING -->
     <section class="pricing" id="planos">
         <div class="container">
             <div class="section-header">
@@ -470,7 +445,6 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS -->
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
@@ -497,7 +471,6 @@
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta" id="contato">
         <div class="container">
             <div class="cta-content">
@@ -511,7 +484,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-content">
