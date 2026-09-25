@@ -1,505 +1,863 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas Particulares de Computação | Reforço Universitário com Gustavo Macedo</title>
-    <meta name="description" content="Aulas particulares de Computação para universitários. Reforço em Java, Python, IA, Algoritmos e Engenharia de Software com professor da KPMG. Primeira aula experimental gratuita.">
-    <meta name="keywords" content="aulas particulares computação, reforço universitário, professor de Java, aulas de Python, aulas de programação, professor particular TI, aulas de IA, Gustavo Macedo">
-    <meta name="author" content="Gustavo Macedo">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gustavomacedo-dev.com/aulas">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Aulas Particulares de Computação | Gustavo Macedo">
-    <meta property="og:description" content="Reforço universitário em Computação com professor da KPMG. Java, Python, IA e mais. Primeira aula grátis.">
-    <meta property="og:image" content="./perfil.png">
-    <meta property="og:url" content="https://gustavomacedo-dev.com/aulas">
-    
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas Particulares de Computação | Reforço Universitário Java, Python e IA</title>
+<meta name="description" content="Aulas particulares de Computação para universitários. Reforço escolar em Java, Python, IA, Algoritmos e ajuda com TCC com professor da KPMG. Agende sua aula experimental gratuita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Schema Markup FAQPage (SEO Rich Snippets) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Gustavo Macedo",
-        "jobTitle": "AI Engineer e Professor de Computação",
-        "worksFor": { "@type": "Organization", "name": "KPMG Brasil" },
-        "url": "https://gustavomacedo-dev.com",
-        "email": "mota.macedo05@gmail.com",
-        "telephone": "+5511940250003",
-        "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
-        "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "Universidade Cidade de São Paulo (UNICID)" }],
-        "knowsAbout": ["Java", "Python", "Inteligência Artificial", "Engenharia de Software", "Algoritmos", "Banco de Dados"]
-    }
-    </script>
-    
-    <script type="application/ld+json">
+      "@type": "Question",
+      "name": "Para quem são indicadas as aulas particulares de computação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As aulas são voltadas para estudantes universitários de Ciência da Computação, Sistemas de Informação e Engenharia de Software. Atendo desde calouros com dificuldades em Lógica de Programação até alunos avançados que desejam dominar Java, Python, Inteligência Artificial ou se preparar para entrevistas técnicas de estágio."
+      }
+    },
     {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Aulas Particulares de Computação",
-        "provider": { "@type": "Person", "name": "Gustavo Macedo" },
-        "areaServed": { "@type": "Country", "name": "Brasil" },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Aulas de Computação",
-            "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aula Avulsa de Computação" }, "price": "50", "priceCurrency": "BRL" },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pacote Mensal de Aulas" }, "price": "250", "priceCurrency": "BRL" }
-            ]
-        }
+      "@type": "Question",
+      "name": "Como funciona a aula experimental gratuita de programação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A primeira aula é 100% gratuita e funciona como um diagnóstico personalizado. Conversamos sobre suas dificuldades na faculdade, avalio seu nível de código e traço um plano de estudos sob medida. Não há compromisso de contratação."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "As aulas de reforço universitário são online ou presenciais?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As aulas são 100% online e ao vivo, via Google Meet ou Zoom. Utilizo compartilhamento de tela e programação em pares (pair programming) para garantir uma experiência prática. As aulas são gravadas para você revisar a matéria quantas vezes precisar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Você ajuda com trabalhos da faculdade, listas de exercícios ou TCC de computação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Ofereço mentoria e orientação para projetos acadêmicos e TCCs. O foco é ensinar o conceito e as boas práticas para que você desenvolva a solução com autonomia, aplicando tecnologias reais do mercado como Spring Boot, React e LangChain."
+      }
     }
-    </script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f4f4f5;
-            --bg-tertiary: #e4e4e7;
-            --border-color: #e4e4e7;
-            --border-hover: #d4d4d8;
-            --text-primary: #18181b;
-            --text-secondary: #52525b;
-            --text-muted: #a1a1aa;
-            --accent: #3b82f6;
-            --accent-hover: #2563eb;
-            --accent-glow: rgba(59, 130, 246, 0.1);
-            --success: #10b981;
-            --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
+  ]
+}
+</script>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: var(--font-main); background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        h1, h2, h3, h4 { font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; }
-        .highlight { color: var(--accent); }
-        .section-header { text-align: center; margin-bottom: 4rem; }
-        .section-header h2 { font-size: 2.5rem; margin-bottom: 0.75rem; }
-        .section-header p { color: var(--text-secondary); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
-        .section-subtitle { color: var(--accent); font-weight: 500; margin-top: 1rem; font-size: 1rem; }
-        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 500; font-size: 0.95rem; transition: all 0.2s ease; cursor: pointer; border: none; }
-        .btn-primary { background-color: var(--text-primary); color: var(--bg-primary); }
-        .btn-primary:hover { background-color: #27272a; transform: translateY(-2px); }
-        .btn-outline { background-color: transparent; color: var(--text-primary); border: 1px solid var(--border-color); }
-        .btn-outline:hover { border-color: var(--text-secondary); background-color: var(--bg-secondary); }
-        .btn-accent { background-color: var(--accent); color: white; }
-        .btn-accent:hover { background-color: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 4px 20px var(--accent-glow); }
-        nav { position: fixed; top: 0; width: 100%; background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-color); z-index: 1000; padding: 1rem 0; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .logo { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); border: 1px solid var(--border-color); padding: 0.25rem 0.75rem; border-radius: 6px; }
-        .nav-links { display: flex; gap: 2rem; }
-        .nav-links a { color: var(--text-secondary); font-size: 0.9rem; transition: color 0.2s; }
-        .nav-links a:hover { color: var(--text-primary); }
-        .hero { min-height: 100vh; padding: 6rem 0 0; position: relative; overflow: hidden; display: flex; align-items: center; }
-        .hero::before { content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 800px; height: 800px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%); pointer-events: none; }
-        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; position: relative; z-index: 1; width: 100%; min-height: calc(100vh - 6rem); }
-        .hero-text { padding: 2rem 0; }
-        .hero-tags { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); }
-        .hero-tags span { background: var(--bg-secondary); padding: 0.4rem 0.8rem; border-radius: 20px; border: 1px solid var(--border-color); display: inline-flex; align-items: center; gap: 0.4rem; }
-        .hero-tags i { color: var(--accent); }
-        .hero-text h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
-        .hero-text .subtitle { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem; }
-        .hero-stats { display: flex; gap: 3rem; margin-bottom: 2.5rem; padding: 1.5rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; }
-        .stat-number { font-size: 1.75rem; font-weight: 700; color: var(--text-primary); }
-        .stat-label { color: var(--text-muted); font-size: 0.85rem; }
-        .hero-buttons { display: flex; gap: 1rem; }
-        .hero-image { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; min-height: calc(100vh - 6rem); position: relative; }
-        .hero-image img { width: 100%; height: 100%; max-height: calc(100vh - 6rem); object-fit: cover; object-position: center top; border-radius: 0; border: none; box-shadow: none; display: block; }
-        .about { padding: 6rem 0; border-top: 1px solid var(--border-color); }
-        .credentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
-        .credential-card { background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 2rem; border-radius: 12px; transition: all 0.3s ease; }
-        .credential-card:hover { border-color: var(--border-hover); transform: translateY(-4px); }
-        .credential-icon { font-size: 1.5rem; margin-bottom: 1rem; display: inline-flex; color: var(--accent); }
-        .credential-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary); }
-        .credential-card p { color: var(--text-secondary); font-size: 0.95rem; }
-        .subjects { padding: 6rem 0; border-top: 1px solid var(--border-color); }
-        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-        .subject-card { background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 2rem; border-radius: 12px; transition: all 0.3s ease; display: flex; flex-direction: column; }
-        .subject-card:hover { border-color: var(--accent); box-shadow: 0 0 30px var(--accent-glow); transform: translateY(-4px); }
-        .subject-card h3 { font-size: 1.2rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
-        .subject-card h3 i { color: var(--accent); }
-        .subject-card p { color: var(--text-secondary); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
-        .subject-level { font-size: 0.8rem; color: var(--accent); background: var(--accent-glow); padding: 0.3rem 0.8rem; border-radius: 20px; align-self: flex-start; }
+<style>
+  :root {
+    --bg: #fafbff;
+    --bg-elev: #ffffff;
+    --bg-soft: #f4f6fc;
+    --ink: #0b1b3a;
+    --ink-soft: #2a3a5c;
+    --muted: #6b7794;
+    --line: #e4e9f4;
+    --line-soft: #eef2fa;
+    --accent: #1d4ed8;
+    --accent-deep: #0f2a73;
+    --accent-soft: #eef3ff;
+    --accent-glow: rgba(29, 78, 216, 0.12);
+    --warm: #f5a623;
+    --warm-deep: #d97706;
+    --radius: 14px;
+    --radius-sm: 8px;
+    --shadow-sm: 0 1px 2px rgba(11, 27, 58, 0.04);
+    --shadow-md: 0 4px 16px rgba(11, 27, 58, 0.06);
+    --shadow-lg: 0 18px 48px rgba(11, 27, 58, 0.10);
+    --ease: cubic-bezier(.22, 1, .36, 1);
+  }
 
-        /* METHODOLOGY - DISTRIBUIÇÃO MELHORADA */
-        .methodology { padding: 6rem 0; border-top: 1px solid var(--border-color); }
-        .method-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .method-step {
-            text-align: center;
-            padding: 2rem 1.5rem;
-            flex: 0 1 220px;
-            max-width: 240px;
-        }
-        .method-icon {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg-secondary);
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            color: var(--accent);
-        }
-        .method-step h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-        .method-step p { color: var(--text-secondary); font-size: 0.9rem; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+  ::selection { background: var(--accent); color: #fff; }
 
-        .pricing { padding: 6rem 0; border-top: 1px solid var(--border-color); }
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; }
-        .price-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; transition: all 0.3s ease; position: relative; display: flex; flex-direction: column; }
-        .price-card.featured { border-color: var(--accent); box-shadow: 0 0 40px var(--accent-glow); }
-        .price-card.featured::before { content: 'MAIS POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; }
-        .price-card:hover { transform: translateY(-4px); }
-        .price-card h3 { font-size: 1.25rem; margin-bottom: 1rem; }
-        .price { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-        .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
-        .price-card ul { margin: 1.5rem 0 2rem; flex-grow: 1; }
-        .price-card ul li { padding: 0.6rem 0; color: var(--text-secondary); font-size: 0.95rem; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; gap: 0.5rem; }
-        .price-card ul li i { color: var(--accent); }
-        .price-card ul li:last-child { border-bottom: none; }
-        .price-card .btn { width: 100%; justify-content: center; margin-top: auto; }
-        .referral-banner { margin-top: 3rem; background: var(--bg-secondary); border: 1px solid var(--accent); border-radius: 12px; padding: 2rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; }
-        .referral-banner h3 { color: var(--accent); margin-bottom: 0.5rem; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
-        .referral-banner p { color: var(--text-secondary); font-size: 0.95rem; }
-        .referral-banner strong { color: var(--text-primary); }
-        .testimonials { padding: 6rem 0; border-top: 1px solid var(--border-color); }
-        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .testimonial-card { background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 2rem; border-radius: 12px; }
-        .stars { color: #fbbf24; margin-bottom: 1rem; letter-spacing: 2px; }
-        .testimonial-card p { color: var(--text-secondary); font-style: italic; margin-bottom: 1.5rem; font-size: 0.95rem; }
-        .author { color: var(--text-primary); font-weight: 500; font-size: 0.9rem; }
-        .cta { padding: 8rem 0; text-align: center; border-top: 1px solid var(--border-color); position: relative; overflow: hidden; }
-        .cta::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%); pointer-events: none; }
-        .cta-content { position: relative; z-index: 1; }
-        .cta h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-        .cta p { color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
-        .cta-buttons { display: flex; gap: 1rem; justify-content: center; }
-        footer { padding: 3rem 0; border-top: 1px solid var(--border-color); text-align: center; }
-        .footer-content { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
-        .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-        .footer-links a { color: var(--text-secondary); font-size: 0.9rem; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--accent); }
-        .footer-bottom { color: var(--text-muted); font-size: 0.85rem; }
-        @media (max-width: 900px) {
-            .hero { min-height: auto; padding: 8rem 0 4rem; }
-            .hero-content { grid-template-columns: 1fr; text-align: center; min-height: auto; }
-            .hero-text h1 { font-size: 2.5rem; }
-            .hero-stats { justify-content: center; }
-            .hero-buttons, .cta-buttons { justify-content: center; }
-            .hero-image { min-height: 400px; max-height: 500px; }
-            .hero-image img { max-height: 500px; }
-            .nav-links { display: none; }
-            .method-step { flex: 0 1 200px; }
-        }
-        @media (max-width: 600px) {
-            .hero-text h1 { font-size: 2rem; }
-            .section-header h2 { font-size: 2rem; }
-            .hero-stats { flex-direction: column; gap: 1.5rem; }
-            .hero-image { min-height: 300px; }
-            .hero-image img { max-height: 400px; }
-            .method-step { flex: 0 1 100%; max-width: 100%; }
-        }
-    </style>
+  .container { width: min(1200px, calc(100% - 48px)); margin: 0 auto; }
+  @media (max-width: 600px) { .container { width: calc(100% - 32px); } }
+
+  /* ============ HEADER ============ */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(250, 251, 255, 0.85);
+    backdrop-filter: blur(16px) saturate(1.4);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 17px; letter-spacing: -0.02em; }
+  .brand-mark {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+    color: #fff; font-weight: 900; font-size: 14px;
+    display: grid; place-items: center;
+    box-shadow: 0 4px 12px var(--accent-glow);
+    letter-spacing: -0.05em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-links a {
+    color: var(--ink-soft); font-size: 14px; font-weight: 500;
+    transition: color 0.2s var(--ease); position: relative;
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; left: 0; bottom: -4px;
+    width: 0; height: 2px; background: var(--accent);
+    transition: width 0.3s var(--ease);
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 8px; padding: 13px 22px; border-radius: var(--radius-sm);
+    font-weight: 600; font-size: 14px; cursor: pointer;
+    transition: all 0.25s var(--ease); border: 0; font-family: inherit;
+    white-space: nowrap;
+  }
+  .btn i { font-size: 16px; }
+  .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 14px var(--accent-glow); }
+  .btn-primary:hover { background: var(--accent-deep); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(29, 78, 216, 0.22); }
+  .btn-outline { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+  .btn-outline:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost:hover { border-color: var(--ink-soft); background: var(--bg-soft); }
+  .btn-warm { background: var(--warm); color: var(--ink); box-shadow: 0 4px 14px rgba(245, 166, 35, 0.3); }
+  .btn-warm:hover { background: var(--warm-deep); color: #fff; transform: translateY(-2px); }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative; overflow: hidden; padding: 80px 0 100px;
+    background:
+      radial-gradient(ellipse 800px 600px at 75% 20%, var(--accent-soft), transparent 70%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.05fr 0.95fr;
+    gap: 60px; align-items: center; position: relative; z-index: 1;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tag-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--bg-elev); border: 1px solid var(--line);
+    padding: 6px 14px; border-radius: 100px;
+    font-size: 13px; font-weight: 600; color: var(--ink-soft);
+    box-shadow: var(--shadow-sm);
+  }
+  .tag-pill i { color: var(--accent); font-size: 14px; }
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 56px); font-weight: 800;
+    line-height: 1.1; letter-spacing: -0.035em;
+    color: var(--ink); margin-bottom: 20px;
+  }
+  .hero h1 .gradient {
+    background: linear-gradient(120deg, var(--accent) 0%, var(--accent-deep) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block; margin-top: 8px;
+  }
+  .hero p.lead {
+    font-size: 18px; color: var(--ink-soft); max-width: 520px;
+    margin-bottom: 36px; line-height: 1.65;
+  }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
+  .hero-meta {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+    padding-top: 32px; border-top: 1px solid var(--line);
+    max-width: 540px;
+  }
+  .hero-meta .item .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px; font-weight: 600; color: var(--accent);
+    letter-spacing: -0.02em; margin-bottom: 4px;
+  }
+  .hero-meta .item .lab { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  .hero-portrait { position: relative; height: 540px; }
+  .portrait-frame {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 50%);
+    border-radius: 24px; transform: rotate(-3deg);
+  }
+  .portrait {
+    position: relative; z-index: 2;
+    width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
+    border-radius: 20px; box-shadow: var(--shadow-lg); border: 6px solid #fff;
+  }
+
+  /* ============ SECTION HEADERS ============ */
+  .section { padding: 100px 0; }
+  .section-head { margin-bottom: 56px; max-width: 640px; }
+  .section-head.center { text-align: center; margin-left: auto; margin-right: auto; }
+  .section-label {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+  }
+  .section-label::before { content: '— '; }
+  .section h2 {
+    font-size: clamp(28px, 4vw, 44px); font-weight: 800;
+    line-height: 1.1; letter-spacing: -0.025em;
+    color: var(--ink); margin-bottom: 16px;
+  }
+  .section h2 .accent { color: var(--accent); }
+  .section .section-sub { font-size: 17px; color: var(--ink-soft); max-width: 560px; }
+  .section-head.center .section-sub { margin-left: auto; margin-right: auto; }
+
+  /* ============ ICON CONTAINERS ============ */
+  .ico { width: 40px; height: 40px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; flex-shrink: 0; font-size: 18px; }
+  .ico-lg { width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; margin-bottom: 18px; font-size: 20px; }
+  .step-ico { width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-soft) 100%); border: 1px solid var(--line); color: var(--accent); display: grid; place-items: center; margin-bottom: 18px; font-size: 22px; }
+
+  /* ============ CREDENTIALS ============ */
+  .credentials { background: var(--bg-elev); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+  .cred-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .cred-card { padding: 28px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg); transition: all 0.3s var(--ease); }
+  .cred-card:hover { border-color: var(--accent); background: var(--bg-elev); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+  .cred-card h3 { font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.015em; }
+  .cred-card p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+  /* ============ SUBJECTS ============ */
+  .subjects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .subject-card { background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; transition: all 0.3s var(--ease); position: relative; overflow: hidden; }
+  .subject-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-deep)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease); }
+  .subject-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow-lg); }
+  .subject-card:hover::before { transform: scaleX(1); }
+  .subject-card h3 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.015em; }
+  .subject-card p { font-size: 14px; color: var(--muted); line-height: 1.55; margin-bottom: 16px; }
+  .subject-card .level { font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 4px 10px; border-radius: 100px; font-family: 'JetBrains Mono', monospace; display: inline-block; }
+
+  /* ============ METHODOLOGY ============ */
+  .method { background: var(--bg-soft); }
+  .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .method-step { background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 24px; position: relative; transition: all 0.3s var(--ease); }
+  .method-step:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .method-step .step-num { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; color: var(--accent); margin-bottom: 16px; letter-spacing: 0.05em; }
+  .method-step h3 { font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.01em; }
+  .method-step p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+  /* ============ PRICING ============ */
+  .pricing-head { text-align: center; max-width: 640px; margin: 0 auto 24px; }
+  .pricing-highlight { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-soft); color: var(--accent); padding: 8px 16px; border-radius: 100px; font-size: 14px; font-weight: 600; margin-bottom: 40px; border: 1px solid var(--accent); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  .price-card { background: var(--bg-elev); border: 1px solid var(--line); border-radius: 18px; padding: 36px 30px; transition: all 0.3s var(--ease); position: relative; display: flex; flex-direction: column; }
+  .price-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .price-card.featured { border-color: var(--accent); border-width: 2px; background: linear-gradient(180deg, var(--accent-soft) 0%, var(--bg-elev) 30%); }
+  .price-card.featured::before { content: 'MAIS POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; padding: 5px 14px; border-radius: 100px; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; font-family: 'JetBrains Mono', monospace; }
+  .price-card .plan-name { font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; font-family: 'JetBrains Mono', monospace; }
+  .price-card .price { font-size: 40px; font-weight: 800; color: var(--ink); letter-spacing: -0.03em; line-height: 1; margin-bottom: 6px; }
+  .price-card .price small { font-size: 14px; font-weight: 500; color: var(--muted); }
+  .price-card .price-desc { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+  .price-card ul { list-style: none; margin: 0 0 28px; flex-grow: 1; }
+  .price-card ul li { padding: 10px 0; border-bottom: 1px solid var(--line-soft); font-size: 14px; color: var(--ink-soft); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .price-card ul li:last-child { border-bottom: 0; }
+  .price-card ul li i { color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 3px; font-size: 14px; }
+  .price-card .btn { width: 100%; }
+
+  /* ============ REFERRAL BANNER ============ */
+  .referral { background: linear-gradient(135deg, var(--ink) 0%, var(--accent-deep) 100%); border-radius: 24px; padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; color: #fff; position: relative; overflow: hidden; }
+  .referral::before { content: ''; position: absolute; top: -100px; right: -50px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(245, 166, 35, 0.2) 0%, transparent 70%); }
+  .referral::after { content: ''; position: absolute; bottom: -100px; left: -50px; width: 350px; height: 350px; background: radial-gradient(circle, rgba(29, 78, 216, 0.3) 0%, transparent 70%); }
+  .referral-content { position: relative; z-index: 1; flex: 1; }
+  .referral-content .label { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--warm); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
+  .referral-content h3 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -0.02em; line-height: 1.2; }
+  .referral-content p { font-size: 15px; color: rgba(255, 255, 255, 0.75); max-width: 540px; line-height: 1.6; }
+  .referral-action { position: relative; z-index: 1; }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonials { background: var(--bg-soft); }
+  .test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .test-card { background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; transition: all 0.3s var(--ease); }
+  .test-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .test-card .stars { color: var(--warm); font-size: 16px; margin-bottom: 16px; display: flex; gap: 2px; }
+  .test-card .quote { font-size: 15px; color: var(--ink-soft); line-height: 1.6; margin-bottom: 20px; font-style: italic; }
+  .test-card .author { display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
+  .test-card .avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-deep)); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 14px; }
+  .test-card .author-info .name { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .test-card .author-info .role { font-size: 12px; color: var(--muted); }
+
+  /* ============ FAQ ============ */
+  .faq-list { max-width: 800px; margin: 0 auto; }
+  .faq-item { background: var(--bg-elev); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow: hidden; transition: all 0.25s var(--ease); }
+  .faq-item:hover { border-color: var(--accent); }
+  .faq-item summary { cursor: pointer; padding: 22px 24px; font-weight: 600; font-size: 16px; color: var(--ink); display: flex; justify-content: space-between; align-items: center; list-style: none; gap: 16px; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 24px; color: var(--accent); font-weight: 300; transition: transform 0.3s var(--ease); flex-shrink: 0; line-height: 1; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .ans { padding: 0 24px 22px; color: var(--ink-soft); font-size: 14.5px; line-height: 1.65; }
+  .faq-item .ans strong { color: var(--ink); font-weight: 600; }
+
+  /* ============ CTA FINAL ============ */
+  .cta-final { background: var(--ink); color: #fff; border-radius: 28px; padding: 64px 48px; text-align: center; position: relative; overflow: hidden; margin: 0 24px; }
+  .cta-final::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); }
+  .cta-final h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; color: #fff; margin-bottom: 14px; position: relative; letter-spacing: -0.025em; }
+  .cta-final p { font-size: 16px; color: rgba(255, 255, 255, 0.75); max-width: 480px; margin: 0 auto 32px; position: relative; }
+  .cta-final .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+  /* ============ FOOTER ============ */
+  footer { background: var(--ink); color: rgba(255, 255, 255, 0.6); padding: 56px 0 32px; margin-top: 80px; }
+  .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  .foot-grid h4 { font-size: 12px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 18px; font-family: 'JetBrains Mono', monospace; }
+  .foot-brand .brand { color: #fff; margin-bottom: 16px; }
+  .foot-brand p { font-size: 14px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; max-width: 320px; }
+  .foot-grid ul li { margin-bottom: 10px; }
+  .foot-grid ul a { font-size: 14px; color: rgba(255, 255, 255, 0.65); transition: color 0.2s var(--ease); display: inline-flex; align-items: center; gap: 8px; }
+  .foot-grid ul a:hover { color: var(--warm); }
+  .foot-bottom { padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12px; color: rgba(255, 255, 255, 0.4); font-family: 'JetBrains Mono', monospace; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-portrait { height: 420px; max-width: 420px; margin: 0 auto; }
+    .cred-grid { grid-template-columns: repeat(2, 1fr); }
+    .subjects-grid { grid-template-columns: repeat(2, 1fr); }
+    .method-grid { grid-template-columns: repeat(2, 1fr); }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+    .test-grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .nav-links { display: none; }
+    .referral { flex-direction: column; text-align: center; padding: 36px 24px; }
+  }
+  @media (max-width: 600px) {
+    .section { padding: 64px 0; }
+    .hero { padding: 48px 0 64px; }
+    .hero-portrait { height: 360px; }
+    .hero-meta { grid-template-columns: 1fr; gap: 16px; }
+    .cred-grid { grid-template-columns: 1fr; }
+    .subjects-grid { grid-template-columns: 1fr; }
+    .method-grid { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr; }
+    .cta-final { padding: 48px 24px; margin: 0 16px; }
+    .price-card { padding: 28px 24px; }
+    .referral { padding: 28px 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+</style>
 </head>
 <body>
 
-    <nav>
-        <div class="nav-container">
-            <div class="logo">[GM]</div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#aulas">Aulas</a></li>
-                <li><a href="#metodologia">Metodologia</a></li>
-                <li><a href="#planos">Planos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <a href="#contato" class="btn btn-primary"><i class="bi bi-calendar-check"></i> Agendar aula</a>
-        </div>
-    </nav>
+<header>
+  <div class="container nav">
+    <a href="#" class="brand">
+      <span class="brand-mark">GM</span>
+      Gustavo Macedo
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#aulas">Disciplinas</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <a href="#contato" class="btn btn-primary"><i class="bi bi-calendar-check"></i> Aula Grátis</a>
+  </div>
+</header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-tags">
-                        <span><i class="bi bi-filetype-java"></i> Java</span>
-                        <span><i class="bi bi-filetype-py"></i> Python</span>
-                        <span><i class="bi bi-cpu"></i> IA</span>
-                        <span><i class="bi bi-code-slash"></i> Engenharia de Software</span>
-                    </div>
-                    <h1>Aulas Particulares de Computação para Universitários<br><span class="highlight">Aprenda programação com quem trabalha no mercado</span></h1>
-                    <p class="subtitle">Reforço universitário em Ciência da Computação e TI com professor da KPMG. Aulas de Java, Python, IA, Algoritmos e mais — com foco em aprovação e carreira.</p>
-                    <div class="hero-stats">
-                        <div><div class="stat-number">94%</div><div class="stat-label">Redução de latência em APIs reais</div></div>
-                        <div><div class="stat-number">2+ anos</div><div class="stat-label">Desenvolvendo em produção</div></div>
-                        <div><div class="stat-number">6-8h</div><div class="stat-label">Módulo Java criado para a Escola DNC</div></div>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#contato" class="btn btn-primary"><i class="bi bi-calendar-check"></i> Agendar aula experimental grátis</a>
-                        <a href="#aulas" class="btn btn-outline">Ver disciplinas <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="./perfil.png" alt="Gustavo Macedo - Professor particular de Computação e AI Engineer na KPMG">
-                </div>
-            </div>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="tags">
+        <span class="tag-pill"><i class="bi bi-cup-hot-fill"></i> Java</span>
+        <span class="tag-pill"><i class="bi bi-filetype-py"></i> Python</span>
+        <span class="tag-pill"><i class="bi bi-cpu-fill"></i> IA & RAG</span>
+        <span class="tag-pill"><i class="bi bi-code-slash"></i> Eng. Software</span>
+      </div>
+      <h1>
+        Aulas Particulares de Computação para Universitários
+        <span class="gradient">Aprenda programação com quem atua no mercado</span>
+      </h1>
+      <p class="lead">
+        Reforço universitário em Ciência da Computação, Sistemas de Informação e TI com engenheiro da KPMG. Aulas particulares de Java, Python, Inteligência Artificial e Algoritmos — focados em aprovação, TCC e empregabilidade real.
+      </p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-primary"><i class="bi bi-calendar-check"></i> Agendar aula experimental grátis</a>
+        <a href="#aulas" class="btn btn-ghost"><i class="bi bi-collection"></i> Ver disciplinas →</a>
+      </div>
+      <div class="hero-meta">
+        <div class="item">
+          <div class="num">94%</div>
+          <div class="lab">de redução de latência<br>em APIs reais</div>
         </div>
-    </section>
-
-    <section class="about" id="sobre">
-        <div class="container">
-            <div class="section-header">
-                <h2>Por que escolher aulas comigo?</h2>
-                <p>Formação acadêmica sólida + experiência real no mercado de tecnologia</p>
-            </div>
-            <div class="credentials-grid">
-                <div class="credential-card">
-                    <i class="bi bi-mortarboard-fill credential-icon"></i>
-                    <h3>Bacharel em Ciência da Computação</h3>
-                    <p>Universidade Cidade de São Paulo (UNICID). Domínio completo da base teórica: algoritmos, estruturas de dados, teoria da computação e matemática discreta.</p>
-                </div>
-                <div class="credential-card">
-                    <i class="bi bi-journal-bookmark-fill credential-icon"></i>
-                    <h3>Pós-graduação em Engenharia de Software</h3>
-                    <p>Descomplica Faculdade Digital. Especialização em arquitetura de sistemas, boas práticas de código e desenvolvimento de software escalável.</p>
-                </div>
-                <div class="credential-card">
-                    <i class="bi bi-robot credential-icon"></i>
-                    <h3>Consultor de IA na KPMG</h3>
-                    <p>Construção de aplicações enterprise com LangChain e Microsoft Copilot Studio. Experiência real com IA generativa no ecossistema corporativo cloud.</p>
-                </div>
-                <div class="credential-card">
-                    <i class="bi bi-code-square credential-icon"></i>
-                    <h3>Desenvolvedor Fullstack + AI</h3>
-                    <p>Projetos em produção com redução de 94% na latência de APIs REST. Arquitetura de agentes IA com LangGraph e RAG para automação de processos.</p>
-                </div>
-                <div class="credential-card">
-                    <i class="bi bi-play-circle-fill credential-icon"></i>
-                    <h3>Criador de Conteúdo Educacional</h3>
-                    <p>Módulo completo de Java (6–8h) produzido para a Escola DNC. Ementa, videoaulas, quizzes e exercícios práticos alinhados às demandas do mercado.</p>
-                </div>
-                <div class="credential-card">
-                    <i class="bi bi-stars credential-icon"></i>
-                    <h3>Especialista em IA Generativa</h3>
-                    <p>Experiência prática com LLMs, RAG, LangChain, LangSmith, Vector Databases e Agentes Autônomos em projetos reais de produção.</p>
-                </div>
-            </div>
+        <div class="item">
+          <div class="num">2+ anos</div>
+          <div class="lab">desenvolvendo soluções<br>em produção</div>
         </div>
-    </section>
-
-    <section class="subjects" id="aulas">
-        <div class="container">
-            <div class="section-header">
-                <h2>Disciplinas de Computação que eu ensino</h2>
-                <p>Do primeiro período ao TCC — com foco no que o mercado realmente exige</p>
-            </div>
-            <div class="subjects-grid">
-                <div class="subject-card">
-                    <h3><i class="bi bi-lightbulb"></i> Lógica de Programação</h3>
-                    <p>Fundamentos essenciais para começar: algoritmos, fluxogramas, variáveis, estruturas condicionais e de repetição. Ideal para quem está no 1º período.</p>
-                    <span class="subject-level">Iniciante</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-filetype-java"></i> Programação em Java</h3>
-                    <p>POO, Spring Boot, design patterns, estruturas de dados e preparação para entrevistas técnicas. Do zero ao nível intermediário.</p>
-                    <span class="subject-level">Iniciante → Intermediário</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-filetype-py"></i> Programação em Python</h3>
-                    <p>Do básico ao avançado: estruturas de dados, OOP, APIs com FastAPI/Flask, automação, scripts e introdução a ciência de dados.</p>
-                    <span class="subject-level">Iniciante → Avançado</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-cpu"></i> Inteligência Artificial</h3>
-                    <p>LLMs, RAG, LangChain, LangGraph, Prompt Engineering, agentes autônomos e machine learning. Para quem quer se destacar no mercado de IA.</p>
-                    <span class="subject-level">Intermediário → Avançado</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-code-slash"></i> Desenvolvimento Web</h3>
-                    <p>HTML5, CSS3, JavaScript, React, Next.js, TypeScript. Frontend e backend completos para criar aplicações web modernas.</p>
-                    <span class="subject-level">Iniciante → Avançado</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-diagram-3"></i> Algoritmos e Estruturas de Dados</h3>
-                    <p>Complexidade, ordenação, grafos, árvores, recursão e resolução de problemas clássicos. Essencial para entrevistas e provas.</p>
-                    <span class="subject-level">Iniciante → Avançado</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-database"></i> Banco de Dados</h3>
-                    <p>SQL, PostgreSQL, MongoDB, modelagem relacional, NoSQL, otimização de queries e Vector DBs para aplicações de IA.</p>
-                    <span class="subject-level">Iniciante → Intermediário</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-gear-wide-connected"></i> Engenharia de Software</h3>
-                    <p>Clean Architecture, SOLID, Design Patterns, TDD, CI/CD, microserviços e boas práticas de desenvolvimento profissional.</p>
-                    <span class="subject-level">Intermediário → Avançado</span>
-                </div>
-                <div class="subject-card">
-                    <h3><i class="bi bi-git"></i> Git e GitHub</h3>
-                    <p>Controle de versão, fluxos de trabalho (Git Flow), pull requests, code review e colaboração em equipe — habilidades essenciais para qualquer dev.</p>
-                    <span class="subject-level">Iniciante → Intermediário</span>
-                </div>
-            </div>
+        <div class="item">
+          <div class="num">6-8h</div>
+          <div class="lab">de módulo de Java<br>criado para a Escola DNC</div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section class="methodology" id="metodologia">
-        <div class="container">
-            <div class="section-header">
-                <h2>Como posso te ajudar a evoluir</h2>
-                <p>Aulas 100% personalizadas. Cada aluno tem um objetivo, eu traço o caminho mais curto até lá.</p>
-            </div>
-            <div class="method-grid">
-                <div class="method-step">
-                    <span class="method-icon"><i class="bi bi-clipboard-data"></i></span>
-                    <h3>Diagnóstico Inicial</h3>
-                    <p>Avalio seu nível, suas dificuldades na faculdade e seus objetivos de carreira para traçar um plano.</p>
-                </div>
-                <div class="method-step">
-                    <span class="method-icon"><i class="bi bi-journal-bookmark"></i></span>
-                    <h3>Plano de Estudos</h3>
-                    <p>Roteiro sob medida com teoria, exercícios práticos e projetos alinhados à sua grade curricular.</p>
-                </div>
-                <div class="method-step">
-                    <span class="method-icon"><i class="bi bi-camera-video"></i></span>
-                    <h3>Aulas Interativas ao Vivo</h3>
-                    <p>Encontros online com compartilhamento de tela, código em tempo real e tira-dúvidas imediato.</p>
-                </div>
-                <div class="method-step">
-                    <span class="method-icon"><i class="bi bi-code-square"></i></span>
-                    <h3>Prática Constante</h3>
-                    <p>Exercícios, quizzes e mini-projetos entre as aulas para fixar o conteúdo e desenvolver autonomia.</p>
-                </div>
-                <div class="method-step">
-                    <span class="method-icon"><i class="bi bi-graph-up"></i></span>
-                    <h3>Feedback Contínuo</h3>
-                    <p>Acompanho sua evolução, ajusto o ritmo e garanto que você esteja sempre progredindo com confiança.</p>
-                </div>
-            </div>
+    <div class="hero-portrait">
+      <div class="portrait-frame"></div>
+      <img class="portrait" src="https://z-cdn-media.chatglm.cn/files/e23af2fc-33cd-4995-a7e7-ea09d4b5f0c6.png?auth_key=1890357916-ad629d52d13642ce97f05148818233bd-0-64d9449d7963d3309cde4e68c2f93b32" alt="Gustavo Macedo, engenheiro de software e professor de computação">
+    </div>
+  </div>
+</section>
+
+<section class="section credentials" id="sobre">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-label">Autoridade e Experiência (E-E-A-T)</div>
+      <h2>Por que aprender com um engenheiro <span class="accent">ativo no mercado?</span></h2>
+      <p class="section-sub">Formação acadêmica sólida combinada com atuação real em IA corporativa e desenvolvimento fullstack. O conteúdo da aula reflete o que as empresas exigem hoje.</p>
+    </div>
+
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="ico-lg"><i class="bi bi-mortarboard-fill"></i></div>
+        <h3>Bacharel em Ciência da Computação</h3>
+        <p>UNICID. Domínio completo da base teórica exigida nas faculdades: algoritmos, estruturas de dados, matemática discreta e banco de dados.</p>
+      </div>
+      <div class="cred-card">
+        <div class="ico-lg"><i class="bi bi-journal-bookmark-fill"></i></div>
+        <h3>Pós-graduação em Eng. de Software</h3>
+        <p>Descomplica. Especialização focada em arquitetura de sistemas, Clean Architecture, microsserviços e desenvolvimento escalável.</p>
+      </div>
+      <div class="cred-card">
+        <div class="ico-lg"><i class="bi bi-briefcase-fill"></i></div>
+        <h3>Consultor de IA na KPMG</h3>
+        <p>Atuação real no mercado corporativo construindo aplicações enterprise com LangChain e Microsoft Copilot Studio em nuvem.</p>
+      </div>
+      <div class="cred-card">
+        <div class="ico-lg"><i class="bi bi-code-square"></i></div>
+        <h3>Desenvolvedor Fullstack + AI</h3>
+        <p>Projetos em produção com redução de 94% na latência de APIs REST. Arquitetura de agentes de IA com LangGraph e RAG.</p>
+      </div>
+      <div class="cred-card">
+        <div class="ico-lg"><i class="bi bi-camera-video-fill"></i></div>
+        <h3>Criador de Conteúdo Educacional</h3>
+        <p>Módulo completo de Java (6–8h) produzido para a Escola DNC. Videoaulas, quizzes e exercícios práticos alinhados ao mercado.</p>
+      </div>
+      <div class="cred-card">
+        <div class="ico-lg"><i class="bi bi-stars"></i></div>
+        <h3>Especialista em IA Generativa</h3>
+        <p>Experiência prática com LLMs, RAG, LangChain, LangSmith, Vector Databases e Agentes Autônomos aplicados a problemas reais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="aulas">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-label">Disciplinas e Tecnologias</div>
+      <h2>Reforço universitário do <span class="accent">1º período ao TCC</span></h2>
+      <p class="section-sub">Aulas particulares que cobrem desde a base matemática até a stacks modernas usadas em estágios e empregos. Foco no que o mercado realmente exige.</p>
+    </div>
+
+    <div class="subjects-grid">
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-lightbulb-fill"></i></div>
+        <h3>Lógica de Programação</h3>
+        <p>Fundamentos essenciais para calouros: algoritmos, fluxogramas, variáveis, estruturas condicionais e de repetição. Desmistifique o código do zero.</p>
+        <span class="level">Nível: Iniciante</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-cup-hot-fill"></i></div>
+        <h3>Programação em Java</h3>
+        <p>POO, Spring Boot, design patterns e estruturas de dados. Preparação completa para provas, trabalhos e entrevistas técnicas de estágio.</p>
+        <span class="level">Nível: Iniciante → Intermediário</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-filetype-py"></i></div>
+        <h3>Programação em Python</h3>
+        <p>Do básico ao avançado: estruturas de dados, OOP, criação de APIs com FastAPI/Flask, automação de scripts e análise de dados.</p>
+        <span class="level">Nível: Iniciante → Avançado</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-cpu-fill"></i></div>
+        <h3>Inteligência Artificial e LLMs</h3>
+        <p>Destaque-se no mercado: RAG com Vector DBs, agentes com LangChain e LangGraph, Prompt Engineering e visão computacional.</p>
+        <span class="level">Nível: Intermediário → Avançado</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-code-slash"></i></div>
+        <h3>Desenvolvimento Web Fullstack</h3>
+        <p>HTML5, CSS3, JavaScript, React, Next.js e TypeScript. Construa portfólios e projetos de conclusão de curso com padrões de mercado.</p>
+        <span class="level">Nível: Iniciante → Avançado</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-bar-chart-fill"></i></div>
+        <h3>Estruturas de Dados e Algoritmos</h3>
+        <p>Complexidade (Big-O), ordenação, grafos, árvores e recursão. A base que separa o desenvolvedor mediano do excelente.</p>
+        <span class="level">Nível: Iniciante → Avançado</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-database-fill"></i></div>
+        <h3>Banco de Dados e SQL</h3>
+        <p>Modelagem relacional, SQL avançado, PostgreSQL, MongoDB e NoSQL. Otimização de queries para projetos escaláveis.</p>
+        <span class="level">Nível: Iniciante → Intermediário</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-gear-fill"></i></div>
+        <h3>Engenharia de Software</h3>
+        <p>Clean Architecture, SOLID, Design Patterns, TDD e CI/CD. Ideal para o TCC e para arquitetar sistemas complexos.</p>
+        <span class="level">Nível: Intermediário → Avançado</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="ico-lg"><i class="bi bi-git"></i></div>
+        <h3>Git, GitHub e DevOps</h3>
+        <p>Controle de versão, Git Flow, pull requests, Docker e colaboração em equipe. Prepare-se para o ambiente real de desenvolvimento.</p>
+        <span class="level">Nível: Iniciante → Intermediário</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section method" id="metodo">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-label">Metodologia Prática</div>
+      <h2>Como funcionam as <span class="accent">aulas particulares</span></h2>
+      <p class="section-sub">Uma metodologia focada em experiência prática (UX) e resolução de problemas reais. Nada de decoreba: você aprende construindo.</p>
+    </div>
+
+    <div class="method-grid">
+      <div class="method-step">
+        <div class="step-num">01 · DIAGNÓSTICO</div>
+        <div class="step-ico"><i class="bi bi-clipboard2-pulse-fill"></i></div>
+        <h3>Aula Experimental Grátis</h3>
+        <p>Na primeira aula gratuita, mapeio suas dificuldades na faculdade, avalio seu nível de código e entendemos seus objetivos de carreira.</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">02 · PLANO</div>
+        <div class="step-ico"><i class="bi bi-map-fill"></i></div>
+        <h3>Plano de Estudos Sob Medida</h3>
+        <p>Roteiro criado para alinhar a grade da sua faculdade com as exigências do mercado de tecnologia atual (provas, TCC e estágios).</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">03 · AULAS</div>
+        <div class="step-ico"><i class="bi bi-camera-video-fill"></i></div>
+        <h3>Aulas Online e Interativas</h3>
+        <p>Encontros ao vivo via Google Meet com programação em pares (pair programming). Compartilhamos tela e codificamos juntos em tempo real.</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">04 · PRÁTICA</div>
+        <div class="step-ico"><i class="bi bi-keyboard-fill"></i></div>
+        <h3>Prática e Code Review</h3>
+        <p>Exercícios e mini-projetos para fixar a matéria. Faço revisão do seu código (code review) aplicando as boas práticas do mercado.</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">05 · FEEDBACK</div>
+        <div class="step-ico"><i class="bi bi-graph-up-arrow"></i></div>
+        <h3>Evolução Contínua</h3>
+        <p>Acompanho de perto seu progresso. As aulas são gravadas para você revisar, garantindo alta retenção de conteúdo e confiança.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="planos">
+  <div class="container">
+    <div class="pricing-head">
+      <div class="section-label" style="display: inline-block;">Planos de Aulas</div>
+      <h2>Investimento acessível <span class="accent">para universitários</span></h2>
+    </div>
+    <div style="text-align: center;">
+      <div class="pricing-highlight">
+        <i class="bi bi-gift-fill"></i>
+        Primeira aula experimental 100% gratuita — sem compromisso.
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="plan-name">Aula Avulsa</div>
+        <div class="price">R$ 60<small> /hora</small></div>
+        <div class="price-desc">Agendamento flexível</div>
+        <ul>
+          <li><i class="bi bi-check2"></i> 1 hora de aula ao vivo online</li>
+          <li><i class="bi bi-check2"></i> Tira-dúvidas pontual de qualquer matéria</li>
+          <li><i class="bi bi-check2"></i> Material de apoio em PDF</li>
+          <li><i class="bi bi-check2"></i> Gravação da aula disponível</li>
+        </ul>
+        <a href="#contato" class="btn btn-outline"><i class="bi bi-calendar-plus"></i> Reservar Aula</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="plan-name">Pacote Mensal</div>
+        <div class="price">R$ 190<small> /mês</small></div>
+        <div class="price-desc">4 aulas de 1 hora (1x por semana)</div>
+        <ul>
+          <li><i class="bi bi-check2"></i> Plano de estudos personalizado</li>
+          <li><i class="bi bi-check2"></i> Exercícios e projetos práticos</li>
+          <li><i class="bi bi-check2"></i> Suporte via WhatsApp entre aulas</li>
+          <li><i class="bi bi-check2"></i> Revisão de trabalhos e projetos</li>
+          <li><i class="bi bi-check2"></i> Relatório de evolução mensal</li>
+        </ul>
+        <a href="#contato" class="btn btn-primary"><i class="bi bi-box-arrow-right"></i> Começar Agora</a>
+      </div>
+
+      <div class="price-card">
+        <div class="plan-name">Intensivo Provas</div>
+        <div class="price">R$ 150<small> /semana</small></div>
+        <div class="price-desc">3 aulas de 1 hora por semana</div>
+        <ul>
+          <li><i class="bi bi-check2"></i> Foco em revisão e resolução de provas</li>
+          <li><i class="bi bi-check2"></i> Simulados e exercícios extras</li>
+          <li><i class="bi bi-check2"></i> Material condensado de revisão</li>
+          <li><i class="bi bi-check2"></i> Ideal para semanas de prova</li>
+        </ul>
+        <a href="#contato" class="btn btn-outline"><i class="bi bi-shield-check"></i> Garantir Vaga</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="referral">
+      <div class="referral-content">
+        <div class="label">Programa de Indicação</div>
+        <h3>Indique um colega de faculdade e ganhe 1 aula grátis</h3>
+        <p>Indique um amigo e, caso ele agende sua aula experimental gratuita, você ganha <strong>1 aula particular gratuita</strong> de 1 hora. Quanto mais amigos indicar, mais aulas grátis você recebe para se preparar!</p>
+      </div>
+      <div class="referral-action">
+        <a href="https://wa.me/5511940250003" class="btn btn-warm"><i class="bi bi-person-plus-fill"></i> Indicar um amigo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-label">Prova Social</div>
+      <h2>O que dizem os <span class="accent">universitários</span></h2>
+      <p class="section-sub">Depoimentos de alunos que pararam de travar nas matérias e melhoraram suas notas com mentoria focada.</p>
+    </div>
+
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
         </div>
-    </section>
-
-    <section class="pricing" id="planos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Planos de aulas particulares</h2>
-                <p>Investimento acessível para estudantes universitários</p>
-                <p class="section-subtitle"><i class="bi bi-gift"></i> Primeira aula experimental 100% gratuita — sem compromisso</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h3>Aula Avulsa</h3>
-                    <div class="price">R$ 50<span>/hora</span></div>
-                    <ul>
-                        <li><i class="bi bi-check2-circle"></i> 1 hora de aula ao vivo online</li>
-                        <li><i class="bi bi-check2-circle"></i> Tira-dúvidas pontual de qualquer disciplina</li>
-                        <li><i class="bi bi-check2-circle"></i> Material de apoio em PDF</li>
-                        <li><i class="bi bi-check2-circle"></i> Agendamento flexível</li>
-                        <li><i class="bi bi-check2-circle"></i> Gravação da aula disponível</li>
-                    </ul>
-                    <a href="#contato" class="btn btn-outline">Reservar Aula</a>
-                </div>
-                <div class="price-card featured">
-                    <h3>Pacote Mensal</h3>
-                    <div class="price">R$ 250<span>/mês</span></div>
-                    <ul>
-                        <li><i class="bi bi-check2-circle"></i> 4 aulas de 1 hora (1x por semana)</li>
-                        <li><i class="bi bi-check2-circle"></i> Plano de estudos personalizado</li>
-                        <li><i class="bi bi-check2-circle"></i> Exercícios e projetos práticos</li>
-                        <li><i class="bi bi-check2-circle"></i> Suporte via WhatsApp entre aulas</li>
-                        <li><i class="bi bi-check2-circle"></i> Revisão de trabalhos e projetos</li>
-                        <li><i class="bi bi-check2-circle"></i> Relatório de evolução mensal</li>
-                    </ul>
-                    <a href="#contato" class="btn btn-accent">Começar Agora</a>
-                </div>
-                <div class="price-card">
-                    <h3>Intensivo Provas</h3>
-                    <div class="price">R$ 180<span>/semana</span></div>
-                    <ul>
-                        <li><i class="bi bi-check2-circle"></i> 3 aulas de 1 hora por semana</li>
-                        <li><i class="bi bi-check2-circle"></i> Foco em revisão e resolução de provas</li>
-                        <li><i class="bi bi-check2-circle"></i> Simulados e exercícios extras</li>
-                        <li><i class="bi bi-check2-circle"></i> Material condensado de revisão</li>
-                        <li><i class="bi bi-check2-circle"></i> Ideal para semanas de prova</li>
-                    </ul>
-                    <a href="#contato" class="btn btn-outline">Garantir Vaga</a>
-                </div>
-            </div>
-
-            <div class="referral-banner">
-                <h3><i class="bi bi-people-fill"></i> Programa de Indicação</h3>
-                <p>Indique um colega e, caso ele agende sua aula experimental gratuita, você ganha <strong>1 aula particular gratuita</strong> de 1 hora. Quanto mais amigos indicarem, mais aulas grátis você recebe!</p>
-            </div>
+        <p class="quote">"Tinha muita dificuldade em Lógica de Programação. O Gustavo tem uma didática incrível, consegui recuperar minha nota em Algoritmos e ainda aprendi Python de verdade. Recomendo demais!"</p>
+        <div class="author">
+          <div class="avatar">LM</div>
+          <div class="author-info">
+            <div class="name">Lucas M.</div>
+            <div class="role">3º período de Ciência da Computação</div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>O que dizem os alunos</h2>
-                <p>Depoimentos de universitários que já melhoraram suas notas com aulas particulares</p>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"O Gustavo tem uma didática incrível. Consegui recuperar minha nota em Algoritmos e ainda aprendi Python de verdade. Recomendo demais para quem está travado!"</p>
-                    <div class="author">— Lucas M., 3º período de Ciência da Computação</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"As aulas de Java me ajudaram não só na faculdade, mas também a conseguir meu primeiro estágio. Ele ensina com exemplos reais do mercado de trabalho."</p>
-                    <div class="author">— Ana Clara S., 4º período de Sistemas de Informação</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Precisava entender IA para meu TCC e o Gustavo foi fundamental. Paciente, organizado e extremamente competente. Nota 10 no TCC e na orientação!"</p>
-                    <div class="author">— Rafael T., 7º período de Ciência da Computação</div>
-                </div>
-            </div>
+      <div class="test-card">
+        <div class="stars">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
         </div>
-    </section>
+        <p class="quote">"As aulas de Java me ajudaram não só na faculdade, mas também a conseguir meu primeiro estágio. Ele ensina com exemplos reais do mercado de trabalho e faz code review dos meus projetos."</p>
+        <div class="author">
+          <div class="avatar">AC</div>
+          <div class="author-info">
+            <div class="name">Ana Clara S.</div>
+            <div class="role">4º período de Sistemas de Informação</div>
+          </div>
+        </div>
+      </div>
 
-    <section class="cta" id="contato">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Vamos destravar sua jornada na Computação?</h2>
-                <p>Tire suas dúvidas, conheça meu método e agende sua aula experimental gratuita. Sem compromisso, sem pressão — apenas uma conversa sobre seus objetivos.</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/5511940250003" class="btn btn-primary"><i class="bi bi-whatsapp"></i> Agendar aula experimental grátis</a>
-                    <a href="#aulas" class="btn btn-outline">Ver disciplinas <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
+      <div class="test-card">
+        <div class="stars">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
         </div>
-    </section>
+        <p class="quote">"Precisava entender IA para meu TCC e o Gustavo foi fundamental. Paciente, organizado e extremamente competente. Nota 10 no TCC e na orientação de LangChain e RAG!"</p>
+        <div class="author">
+          <div class="avatar">RT</div>
+          <div class="author-info">
+            <div class="name">Rafael T.</div>
+            <div class="role">7º período de Ciência da Computação</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="mailto:mota.macedo05@gmail.com"><i class="bi bi-envelope"></i> mota.macedo05@gmail.com</a>
-                    <a href="tel:+5511940250003"><i class="bi bi-telephone"></i> +55 (11) 94025-0003</a>
-                    <a href="https://linkedin.com/in/gustavomacedo-dev" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/gustavomacedo-dev" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-                    <a href="https://gustavomacedo-dev.com" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Portfolio</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Gustavo Macedo · Aulas particulares de Computação · São Paulo, Brasil</p>
-            </div>
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <div class="section-label">Dúvidas Frequentes</div>
+      <h2>Perguntas sobre as <span class="accent">aulas particulares</span></h2>
+      <p class="section-sub">Informações sobre metodologia, TCC e agendamento. Se sua pergunta não estiver aqui, me chame no WhatsApp!</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>1. Para quem são indicadas as aulas particulares de computação?</summary>
+        <div class="ans">As aulas são voltadas para estudantes universitários de Ciência da Computação, Sistemas de Informação, Engenharia de Software e áreas correlatas. Atendo desde calouros com dificuldades em <strong>Lógica de Programação</strong> até alunos avançados que desejam dominar <strong>Java, Python, Inteligência Artificial (RAG/Agentes)</strong> ou se preparar para entrevistas técnicas de estágio e emprego.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>2. Como funciona a aula experimental gratuita?</summary>
+        <div class="ans">A primeira aula é 100% gratuita e funciona como um <strong>diagnóstico personalizado</strong>. Nesse encontro, conversamos sobre suas dificuldades atuais, avalio seu nível de conhecimento e traço um plano de estudos sob medida para seus objetivos. Não há nenhum compromisso de contratação; é uma oportunidade para você conhecer minha didática e metodologia sem riscos.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>3. As aulas são online ou presenciais?</summary>
+        <div class="ans">As aulas são <strong>100% online e ao vivo</strong>, realizadas via Google Meet ou Zoom. Utilizo compartilhamento de tela, programação em pares (pair programming) e ambientes na nuvem para garantir uma experiência tão prática e interativa quanto a presencial. Além disso, todas as aulas podem ser gravadas para que você revise o conteúdo quantas vezes precisar.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>4. Você ajuda com trabalhos da faculdade, listas de exercícios ou TCC?</summary>
+        <div class="ans">Sim! Ofereço mentoria e orientação para projetos acadêmicos e TCCs. O foco é ensinar o conceito, a arquitetura e as boas práticas para que <strong>você</strong> desenvolva a solução com autonomia. Isso garante aprendizado real, notas melhores e evita problemas acadêmicos, enquanto aplicamos tecnologias reais do mercado (como Spring Boot, React ou LangChain).</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>5. Preciso ter algum conhecimento prévio de programação para começar?</summary>
+        <div class="ans">Não. Eu adapto o ritmo e o material didático ao seu nível atual. Se você está travado no início do curso, começamos do zero, com foco total em desmistificar a Lógica de Programação e Estruturas de Dados. Se você já tem uma base, avançamos direto para otimização de código, Design Patterns ou frameworks específicos.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>6. Como funciona o pagamento e o agendamento dos horários?</summary>
+        <div class="ans">O agendamento é flexível e combinado diretamente pelo WhatsApp, respeitando sua grade universitária. O pagamento pode ser feito via <strong>Pix ou cartão de crédito</strong>. Para o <em>Pacote Mensal</em> e o <em>Intensivo Provas</em>, o investimento é fechado com antecedência para garantir a reserva do seu horário exclusivo na minha agenda.</div>
+      </details>
+      
+      <details class="faq-item">
+        <summary>7. O que acontece se eu precisar cancelar ou remarcar uma aula?</summary>
+        <div class="ans">Entendo que a rotina universitária pode ser imprevista. Solicito apenas que o cancelamento ou remarcação seja avisado com pelo menos <strong>12 horas de antecedência</strong>. Dessa forma, podemos reagendar sem que a aula seja descontada do seu pacote.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contato" style="padding-bottom: 0;">
+  <div class="container">
+    <div class="cta-final">
+      <h2>Vamos destravar sua jornada na Computação?</h2>
+      <p>Tire suas dúvidas, conheça meu método e agende sua aula experimental gratuita. Sem compromisso, sem pressão — apenas uma conversa estratégica sobre seus objetivos acadêmicos e de carreira.</p>
+      <div class="actions">
+        <a href="https://wa.me/5511940250003" class="btn btn-primary"><i class="bi bi-whatsapp"></i> Agendar aula experimental grátis</a>
+        <a href="#aulas" class="btn btn-ghost" style="color: #fff; border-color: rgba(255,255,255,0.2);"><i class="bi bi-collection"></i> Ver disciplinas →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="brand-mark">GM</span>
+          Gustavo Macedo
         </div>
-    </footer>
+        <p>Aulas particulares de Computação para universitários. Reforço em Java, Python, IA, Algoritmos e Engenharia de Software com professor da KPMG.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre"><i class="bi bi-chevron-right"></i> Sobre</a></li>
+          <li><a href="#aulas"><i class="bi bi-chevron-right"></i> Disciplinas</a></li>
+          <li><a href="#metodo"><i class="bi bi-chevron-right"></i> Método</a></li>
+          <li><a href="#planos"><i class="bi bi-chevron-right"></i> Planos</a></li>
+          <li><a href="#faq"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:mota.macedo05@gmail.com"><i class="bi bi-envelope"></i> mota.macedo05@gmail.com</a></li>
+          <li><a href="https://wa.me/5511940250003"><i class="bi bi-whatsapp"></i> +55 (11) 94025-0003</a></li>
+          <li><a href="#"><i class="bi bi-geo-alt"></i> São Paulo · SP · Brasil</a></li>
+          <li><a href="#"><i class="bi bi-laptop"></i> Aulas 100% online</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Presença</h4>
+        <ul>
+          <li><a href="https://linkedin.com/in/gustavomacedo-dev" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/gustavomacedo-dev" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a></li>
+          <li><a href="https://gustavomacedo-dev.com" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 GUSTAVO MACEDO · AULAS PARTICULARES DE COMPUTAÇÃO</div>
+      <div>SÃO PAULO · BRASIL</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll para anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Fecha outros FAQs ao abrir um
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('toggle', () => {
+      if (item.open) {
+        document.querySelectorAll('.faq-item').forEach(other => {
+          if (other !== item) other.open = false;
+        });
+      }
+    });
+  });
+
+  // Observa entrada dos cards para fade-in sutil (Melhoria de UX)
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.subject-card, .method-step, .cred-card, .price-card, .test-card, .referral').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s cubic-bezier(.22,1,.36,1), transform 0.6s cubic-bezier(.22,1,.36,1)';
+    io.observe(el);
+  });
+</script>
 
 </body>
 </html>
